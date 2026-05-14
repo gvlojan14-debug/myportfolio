@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varunalojan Portfolio Website</title>
+    <link rel="icon" type="image/png" href="images/head.png">  
+    <link rel="stylesheet" href="style.css"> 
+
+</head>
+<body>
+<div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#h"><button class="btnLogin-popup">Log In</button></a></li>
+                    <li>
+                        <div class="search-box">
+                            <input type="text" id="searchInput" placeholder="Search...">
+                            <button id="searchBtn" aria-label="Search"><i class="fas fa-search"></i></button>
+                        </div>
+                    </li>
+                    <li><img src="images/mood.png" width="20"></li>
+                    <i class="fas" onclick="closemenu()"><img src="images/mark.png" width="30"></i> 
+                </ul>
+                <i class="fas" onclick="openmenu()"><img src="images/bar.png" width="30"></i> 
+            </nav>
+            <div class="header-text">
+                <p>Full-Stock Development</p>
+                <h1>Hi, I'm <span>Varunalojan</span><br>From Sri Lanka</h1>
+            </div>
+        </div>
+        <div class="wrapper">
+                <span class="icon-close"><img src="images/mark.png" width="30"></span>
+            
+                <div class="form-box login">
+                    <h2>Login</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"><img src="images/envelope.png" width="20"></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><img src="images/password.png" width="20"></span>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox">Remember Me</label>
+                            <a href="#">Forgot Password</a>
+                        </div>
+                        <button type="submit" class="btnn">Login</button>
+                        <div class="login-register">
+                            <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                        </div>
+                    </form>
+                </div>    
+            
+                <div class="form-box Register">
+                        <h2>Register</h2>
+                        <form action="#">
+                            <div class="input-box">
+                                <span class="icon"><img src="images/username.png" width="20"></span>
+                                <input type="text" required>
+                                <label>Username</label>
+                            </div>
+                            <div class="input-box">
+                                <span class="icon"><img src="images/envelope.png" width="20"></span>
+                                <input type="email" required>
+                                <label>Email</label>
+                            </div>
+                            <div class="input-box">
+                                <span class="icon"><img src="images/password.png" width="20"></span>
+                                <input type="password" required>
+                                <label>Password</label>
+                            </div>
+                            <div class="remember-forgot">
+                                <label><input type="checkbox">Agree to the terms & conditions</label>
+                            </div>
+                            <button type="submit" class="btnn">Register</button>
+                            <div class="login-register">
+                                <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                            </div>
+                        </form>
+                    </div> 
+        </div>   
+
+        <div class="login-overlay"></div>
+</div>
+    
+
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>  
+                <p style="line-height: 1.8; margin-bottom: 1.2rem;">I am Varunalojan. I'm a developer passionate about the synergy between AI and IT. i build full-stack applications that aren't just functional, but intelligent and secure by design. Expertly weaving machine learning and automation into functional software ecosystems. Building robust full-stack applications designed for growth and high-speed performance. Dedicated to crafting intelligent tools that simplify complex workflows. Always exploring the latest AI frameworks to deliver cutting-edge software solutions. I aim to bridge the gap between human needs and machine intelligence through seamless, high-impact software development.</p>                  
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Frontend Languages</span><br> HTML, JavaScript, CSS</li>
+                        <li><span>Backend Languages</span><br> C, C++, Java, Python</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021 - Current</span><br>Designing Web/App interfaces</li>
+                        <li><span>2025 - Current</span><br>Web app Development</li>
+                        <li><span>2025 - Current</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>University of ICBT</span><br>BSc (Hons) Information Technology in Artificial intelligence</li>
+                        <li><span>2025</span><br>Web app Development</li>
+                        <li><span>2025</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1> 
+        <div class="services-list" style="line-height: 1.8;">
+            <div>
+                <img src="images/code.png" width="50">
+                <h2>Web design</h2>
+                <p>I create modern and responsive websites that provide a smooth user experience across all devices. My focus is on clean layouts, attractive visuals, fast performance, and user-friendly navigation to help businesses build a strong online presence.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <img src="images/crop.png" width="50">
+                <h2>UI/UX design</h2>
+                <p>I design intuitive and visually appealing user interfaces with a strong focus on user experience. From wireframes to final designs, I ensure every element is easy to use, engaging, and designed to improve customer satisfaction.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <img src="images/app.png" width="50">
+                <h2>App design</h2>
+                <p>I create creative and functional mobile app designs for Android and iOS platforms. My app designs focus on simplicity, usability, modern aesthetics, and seamless interaction to deliver a better digital experience.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media</h3>
+                    <p>The app connects you to the talented people around the world. Download it from play store</p>
+                    <a href="#"><img src="images/link.png"></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Music Media</h3>
+                    <p>The app connects you to the talented people around the world. Download it from play store</p>
+                    <a href="#"><img src="images/link.png"></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online shopping App</h3>
+                    <p>The app connects you to the talented people around the world. Download it from play store</p>
+                    <a href="#"><img src="images/link.png"></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">Visit Website</a>
+    </div>
+</div>
+
+<div id="contact">
+    <div  class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas"><img src="images/location.png" width="20"></i>Our Location</p>
+                <div class="location">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.63215406648!2d79.77380332700568!3d6.921831560924624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo!5e0!3m2!1sen!2slk!4v1778606115105!5m2!1sen!2slk"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <p><i class="fas"><img src="images/envelope.png" width="20"></i>gvlojan14@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas"><img src="images/phone.png" width="20"></i>0751470101</p>
+                
+                
+            </div>
+            <div class="contact-right">
+                <form id="submit-to-google-sheet" name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <p>I'm a UI/UX Designer and Web Developer passionate about creating beautiful and functional digital experiences.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#services">Web Design</a></li>
+                        <li><a href="#services">UI/UX Design</a></li>
+                        <li><a href="#services">App Design</a></li>
+                        <li><a href="#services">Development</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Me</h3>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><img src="images/facebook.png" width="30"></a>
+                        <a href="#" class="social-link"><img src="images/x.png" width="30"></a>
+                        <a href="#" class="social-link"><img src="images/instagram.png" width="30"></a>
+                        <a href="#" class="social-link"><img src="images/linkedin.png" width="30"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Varunalojan. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a> | 
+                    <a href="#">Terms of Service</a> | 
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+</div>
+    
+<a href="#header"><img src="images/top.png" style="right: 2%; top: 80%; width: 50px;" class="scrolltotop"></a>
+
+<a href="#header"><img src="images/chat.png" style="right: 2%; top: 90%; width: 50px;" class="chat-icon"></a>
+
+<div class="chat-container">
+    <div class="chat-header">
+        <h1>AI Chatbot</h1>
+        <img src="images/mark.png" class="chat-close" width="20">
+    </div>
+    <div class="chat-messages" id="chat-messages">
+        <div class="message bot-message">
+            <p>Hello! I'm your AI assistant. How can I help you totday?</p>
+        </div>
+    </div>
+    <div class="chat-input">
+        <input type="text" id="user-input" placeholder="Type your message here...">
+        <button id="send-button">Send</button>
+    </div>
+</div>
+
+<div class="chat-overlay"></div>
+
+<script src="java.js"></script>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxxsZQsaoI8Q2i1WDjuI74qxONKXf4jhjJ2Q2s9e7UKrsQg9KgMpaGrGK1KrJniVhmuGQ/exec';
+    const form = document.getElementById('submit-to-google-sheet') || document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+
+    if (form) {
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`Network response was not ok (${response.status})`);
+                    }
+                    return response.text();
+                })
+                .then(() => {
+                    msg.innerHTML = "Message sent successfully";
+                    setTimeout(() => {
+                        msg.innerHTML = "";
+                    }, 5000);
+                    form.reset();
+                })
+                .catch(error => {
+                    msg.innerHTML = "Message failed to send";
+                    console.error('Error!', error);
+                });
+        });
+    } else {
+        console.error('Contact form not found: submit-to-google-sheet');
+    }
+</script>
+</body>
+</html>
